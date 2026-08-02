@@ -3,301 +3,517 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GN BPS | Exército Brasileiro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Exército Brasileiro | Brasil Play Shox (BPS)</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Orbitron:wght@600;800;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
 
+    <div class="top-stripe"></div>
+
+    <!-- HEADER COM LOGO FIXO E MENU HAMBÚRGUER -->
     <header>
         <div class="nav-container">
-            <div class="logo"><i class="fa-solid fa-shield-halved"></i> Exército Brasileiro</div>
-            <input type="checkbox" id="menu-toggle" style="display: none;">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <div class="logo">
+                <div class="logo-img"><i class="fa-solid fa-shield-halved"></i></div>
+                EXÉRCITO BRASILEIRO
+            </div>
 
-            <ul class="nav-menu">
-                <li><a href="#home">// INÍCIO</a></li>
-                <li><a href="#diretrizes">// DIRETRIZES</a></li>
-                <li><a href="#operacoes">// OPERAÇÕES</a></li>
-                <li><a href="#comando">// COMANDO</a></li>
-                <li><a href="#destaque">// QUADRO DE HONRA</a></li>
-                <li><a href="#alistamento">// RECRUTAMENTO</a></li>
+            <!-- BOTÃO HAMBÚRGUER PARA MOBILE -->
+            <button class="menu-mobile-btn" id="btn-mobile" aria-label="Abrir Menu">
+                <span class="hamburguer"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">INÍCIO</a></li>
+                <li><a href="#atribuicoes">ATRIBUIÇÕES</a></li>
+                <li><a href="#divisoes">DIVISÕES</a></li>
+                <li><a href="#efetivo">EFETIVO</a></li>
+                <li><a href="#codigos">CÓDIGOS & REGRAS</a></li>
+                <li><a href="#alistamento">ALISTAMENTO</a></li>
             </ul>
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
-        <div class="mira-scope"><div class="anel-interno"></div></div>
-        <div class="radar-varredura"></div>
-        <div class="hero-content">
-            <p class="hero-tag">// FORÇA_TÁTICA_BPS // PROTOCOLO_ATIVO</p>
-            <h1 class="tech-glitch" data-text="Exército Brasileiro">Exército Brasileiro</h1>
-            <p>Defendendo e garantindo a ordem tática no servidor <span style="color:var(--brilho-shox); font-weight: bold;">Brasil Play Shox</span>.</p>
-            <div class="status-cyber">
-                <span class="ping-indicator"></span> SISTEMA: ONLINE // DIRETRIZ_BPS_ATIVADA
+        <div class="hero-tag"><i class="fa-solid fa-crosshairs"></i> SERVIDOR BRASIL PLAY SHOX (BPS)</div>
+        <h1>BRAÇO FORTE - MÃO AMIGA</h1>
+        <p>Garantindo a soberania nacional, a ordem tática e a segurança máxima do estado. Disciplina inegociável, Honra e Lealdade acima de tudo.</p>
+        <div class="hero-btns">
+            <a href="#alistamento" class="btn-militar"><i class="fa-solid fa-file-signature"></i> RECRUTAMENTO OPERACIONAL</a>
+            <a href="#efetivo" class="btn-militar secundario"><i class="fa-solid fa-users"></i> QUADRO DE MEMBROS</a>
+        </div>
+    </section>
+
+    <!-- ATRIBUIÇÕES -->
+    <section class="secao" id="atribuicoes">
+        <h2 class="titulo-secao"><i class="fa-solid fa-person-military-rifle"></i> ATRIBUIÇÕES TÁTICAS EM CAMPO</h2>
+        <div class="grid-3">
+            <div class="card-militar">
+                <i class="fa-solid fa-shield-cat icon-card"></i>
+                <h3>PATRULHAMENTO SOBRE-RODAS</h3>
+                <p>Manutenção da Ordem Pública nas rodovias estaduais e zonas de alto risco, combatendo a criminalidade organizada e tráfico de munições.</p>
             </div>
-            <div class="hero-btns">
-                <a href="#alistamento" class="btn-tech"><i class="fa-solid fa-terminal"></i> INICIAR ALISTAMENTO</a>
-                <a href="#comando" class="btn-tech secundario"><i class="fa-solid fa-users"></i> VER COMANDO</a>
+            <div class="card-militar">
+                <i class="fa-solid fa-truck-ramp-box icon-card"></i>
+                <h3>ESCOLTA ARMADA DE CARGAS</h3>
+                <p>Segurança tática para transporte de materiais bélicos, recursos governamentais e escolta VIP para o Alto Comando.</p>
+            </div>
+            <div class="card-militar">
+                <i class="fa-solid fa-burst icon-card"></i>
+                <h3>OPERAÇÕES ANTI-TERRORISMO</h3>
+                <p>Incursões estratégicas em territórios hostis, combate a assaltos de grande porte e erradicação de facções criminosas.</p>
             </div>
         </div>
     </section>
 
-    <section class="secao sub-hero-stats">
-        <div class="grid-stats">
-            <div class="stat-card clipped-corner">
-                <div class="icon-arma"><i class="fa-solid fa-person-walking-arrow-right"></i></div>
-                <h3>+1.500</h3>
-                <p>> PATRULHAS_REALIZADAS</p>
-                <div class="barra-municao"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <!-- DIVISÕES ESPECIALIZADAS -->
+    <section class="secao" id="divisoes">
+        <h2 class="titulo-secao"><i class="fa-solid fa-sitemap"></i> DIVISÕES BÉLICAS ESPECIALIZADAS</h2>
+        <div class="grid-divisoes">
+            <div class="card-divisao">
+                <i class="fa-solid fa-jet-fighter icon-card" style="color: var(--militar-amarelo);"></i>
+                <h3>FAB - FORÇA AÉREA</h3>
+                <p>Apoio tático aéreo, sobrevoo de reconhecimento, cobertura pesada para tropas terrestres e resgate sob fogo inimigo.</p>
             </div>
-            <div class="stat-card clipped-corner">
-                <div class="icon-arma"><i class="fa-solid fa-crosshairs"></i></div>
-                <h3>+300</h3>
-                <p>> OPERAÇÕES_TÁTICAS</p>
-                <div class="barra-municao"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="card-divisao">
+                <i class="fa-solid fa-user-ninja icon-card" style="color: var(--militar-amarelo);"></i>
+                <h3>COMANDOS / CIGS</h3>
+                <p>Unidade de Elite especializada em operações sigilosas, reconhecimento de terreno hostil e neutralização de alvos de alto valor.</p>
             </div>
-            <div class="stat-card clipped-corner">
-                <div class="icon-arma"><i class="fa-solid fa-flag"></i></div>
-                <h3>100%</h3>
-                <p>> LEALDADE_À_PATRIA</p>
-                <div class="barra-municao"><span></span><span></span><span></span><span></span><span></span><span></span></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="secao" id="diretrizes">
-        <h2 class="titulo-secao">MANUAL DE CONDUTA // REQUISITOS</h2>
-        <div class="grid-diretrizes">
-            <div class="card-diretriz neon-border">
-                <div class="hud-corner tl"></div><div class="hud-corner br"></div>
-                <i class="fa-solid fa-gavel icon-cyber"></i>
-                <h3>01. DISCIPLINA RÍGIDA</h3>
-                <p>Respeito total à hierarquia militar e às regras do servidor BPS. Quebra de Roleplay (Anti-RP) resultará em corte imediato.</p>
-            </div>
-            <div class="card-diretriz neon-border">
-                <div class="hud-corner tl"></div><div class="hud-corner br"></div>
-                <i class="fa-solid fa-gun icon-cyber"></i>
-                <h3>02. CAPACIDADE TÁTICA</h3>
-                <p>Saber agir sob pressão em invasões de perímetro, escoltas de autoridades e gerenciamento de crises táticas.</p>
-            </div>
-            <div class="card-diretriz neon-border">
-                <div class="hud-corner tl"></div><div class="hud-corner br"></div>
-                <i class="fa-solid fa-headset icon-cyber"></i>
-                <h3>03. COMUNICAÇÃO</h3>
-                <p>Uso obrigatório de microfone de qualidade e presença ativa nos canais oficiais de rádio (Discord/TS).</p>
+            <div class="card-divisao">
+                <i class="fa-solid fa-truck-monster icon-card" style="color: var(--militar-amarelo);"></i>
+                <h3>INFANTARIA PESADA</h3>
+                <p>Espinha dorsal do Exército. Responsável pelo bloqueio de vias principais, uso de blindados e contenção direta de motins.</p>
             </div>
         </div>
     </section>
 
-    <section class="secao" id="operacoes">
-        <h2 class="titulo-secao">OPERAÇÕES DO EXÉRCITO</h2>
-        <div class="grid-fotos">
+    <!-- TABELA DE MEMBROS DA ORG -->
+    <section class="secao" id="efetivo">
+        <h2 class="titulo-secao"><i class="fa-solid fa-id-card"></i> QUADRO GENERALIZADO DO EFETIVO</h2>
+        <div class="tabela-container">
+            <table class="tabela-membros">
+                <thead>
+                    <tr>
+                        <th>Patente / Cargo</th>
+                        <th>Operador / Nick</th>
+                        <th>Último Login Registrado</th>
+                        <th>Status Operacional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- LÍDER E SUBLÍDERES -->
+                    <tr>
+                        <td><span class="badge badge-comando">Líder</span></td>
+                        <td><strong>call_Famo$</strong></td>
+                        <td>01/08/2026 - 21:08:32</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-comando">SubLíder 1</span></td>
+                        <td><strong>Luiss_Brasil_4</strong></td>
+                        <td>01/08/2026 - 19:25:02</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-comando">SubLíder 2</span></td>
+                        <td><strong>CaioXDE</strong></td>
+                        <td>01/08/2026 - 11:51:03</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
 
-            <div class="card-foto clipped-corner neon-border">
-                <div class="img-container">
-                    <img src="img/sa-mp-026.png" alt="Treinamento Tático">
-                </div>
-                <div class="info-foto">
-                    <h3>> TREINAMENTO_TÁTICO.exe</h3>
-                    <p style="color: var(--texto-muted); font-size: 0.8rem;">Simulação de quebra de perímetro e combate em ambiente fechado.</p>
-                </div>
-            </div>
-
-            <div class="card-foto clipped-corner neon-border">
-                <div class="img-container">
-                    <img src="img/sa-mp-027.png" alt="Operação Urbana">
-                </div>
-                <div class="info-foto">
-                    <h3>> OPERAÇÃO_URBANA_01.dat</h3>
-                    <p style="color: var(--texto-muted); font-size: 0.8rem;">Monitoramento e resposta rápida na jurisdição de Los Santos.</p>
-                </div>
-            </div>
-
+                    <!-- MEMBROS DA ORG -->
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 0</span></td>
+                        <td>Ramon_CloW</td>
+                        <td>20/07/2026 - 21:42:13</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 1</span></td>
+                        <td>ARQUINO_Famo$</td>
+                        <td>22/07/2026 - 18:25:53</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 2</span></td>
+                        <td>Teyg_TDK</td>
+                        <td>01/08/2026 - 16:59:19</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 3</span></td>
+                        <td>[N]ordestino_SPK</td>
+                        <td>01/08/2026 - 14:51:51</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 4</span></td>
+                        <td>felipe_ramos</td>
+                        <td>01/08/2026 - 19:17:41</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 5</span></td>
+                        <td>iagouu_B13</td>
+                        <td>30/07/2026 - 11:28:16</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 6</span></td>
+                        <td>ladrao_dgalinha</td>
+                        <td>01/08/2026 - 14:11:29</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 7</span></td>
+                        <td>wellisonjjj_Famo$</td>
+                        <td>01/08/2026 - 13:14:03</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 9</span></td>
+                        <td>marreta_</td>
+                        <td>01/08/2026 - 20:42:55</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 10</span></td>
+                        <td>SEU_VEIO</td>
+                        <td>22/07/2026 - 11:03:07</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 11</span></td>
+                        <td>Black_list244</td>
+                        <td>27/07/2026 - 11:41:32</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 13</span></td>
+                        <td>C.O.R.I.N.G.A</td>
+                        <td>31/07/2026 - 15:53:34</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 14</span></td>
+                        <td>Drakin._PsycO</td>
+                        <td>01/08/2026 - 11:01:58</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 15</span></td>
+                        <td>Sr_Yone</td>
+                        <td>01/08/2026 - 12:50:06</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 16</span></td>
+                        <td>dontcryforhoes</td>
+                        <td>01/08/2026 - 18:43:54</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 18</span></td>
+                        <td>z[L]UFFY_Famo$</td>
+                        <td>26/07/2026 - 11:31:30</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 19</span></td>
+                        <td>negaodojob</td>
+                        <td>30/07/2026 - 15:18:00</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 20</span></td>
+                        <td>Jhay</td>
+                        <td>28/07/2026 - 06:43:39</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 21</span></td>
+                        <td>tiozinho_tbs</td>
+                        <td>01/08/2026 - 07:17:39</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 22</span></td>
+                        <td>sr_tokio</td>
+                        <td>29/07/2026 - 14:10:55</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 23</span></td>
+                        <td>leo_KHAOS</td>
+                        <td>01/08/2026 - 20:28:17</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 27</span></td>
+                        <td>barraizin_067</td>
+                        <td>19/07/2026 - 20:48:23</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 28</span></td>
+                        <td>kayke_tbs</td>
+                        <td>26/07/2026 - 14:49:41</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 32</span></td>
+                        <td>Barrao067</td>
+                        <td>28/07/2026 - 19:59:23</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 33</span></td>
+                        <td>savinho063</td>
+                        <td>15/07/2026 - 19:27:08</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 35</span></td>
+                        <td>Pickles</td>
+                        <td>01/08/2026 - 12:43:34</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-praca">Membro 36</span></td>
+                        <td>SAYBAYSAY</td>
+                        <td>31/07/2026 - 23:50:59</td>
+                        <td><span style="color: var(--militar-verde-bright);">● EM SERVIÇO</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-    <section class="secao" id="comando">
-        <h2 class="titulo-secao">OFICIAIS DE _MATRIZ</h2>
-        <div class="grid-comando">
-
-            <div class="card-membro lider neon-border clipped-corner">
-                <div class="badge-patente">GEN.</div>
-                <div class="nome-membro tech-glitch">Call_Famo$</div>
-                <div class="cargo-membro">> LÍDER_SUPREMO</div>
-                <div class="chevron-patente"><span></span><span></span><span></span></div>
-            </div>
-
-            <div class="card-membro neon-border clipped-corner">
-                <div class="badge-patente">GEN. DIV.</div>
-                <div class="nome-membro">Luiss_Brasil_4</div>
-                <div class="cargo-membro">> SUB_COMANDANTE</div>
-                <div class="chevron-patente"><span></span><span></span></div>
-            </div>
-
-            <div class="card-membro neon-border clipped-corner">
-                <div class="badge-patente">GEN. DIV.</div>
-                <div class="nome-membro">CaioX</div>
-                <div class="cargo-membro">> SUB_COMANDANTE</div>
-                <div class="chevron-patente"><span></span><span></span></div>
-            </div>
-
+    <!-- CÓDIGOS & REGRAS -->
+    <section class="secao" id="codigos">
+        <h2 class="titulo-secao"><i class="fa-solid fa-book-skull"></i> CÓDIGOS & DIRETRIZES DE CAMPO</h2>
+        
+        <div class="grid-codigos" style="margin-bottom: 3rem;">
+            <div class="item-codigo"><span class="code">QAP</span> <span>Na escuta / Atento</span></div>
+            <div class="item-codigo"><span class="code">QSL</span> <span>Entendido / Confirmado</span></div>
+            <div class="item-codigo"><span class="code">QRU</span> <span>Ocorrência em andamento</span></div>
+            <div class="item-codigo"><span class="code">QTH</span> <span>Localização atual</span></div>
+            <div class="item-codigo"><span class="code">TÁTICO 01</span> <span>Início de Patrulha</span></div>
+            <div class="item-codigo"><span class="code">CÓDIGO 3</span> <span>Emergência (Sirene/Giroflex)</span></div>
+            <div class="item-codigo"><span class="code">CÓDIGO 5</span> <span>Perseguição em Alta Velocidade</span></div>
+            <div class="item-codigo"><span class="code">QRT</span> <span>Encerrando Transmissão / Saindo</span></div>
         </div>
-    </section>
 
-    <section class="secao" id="destaque">
-        <h2 class="titulo-secao">QUADRO DE HONRA</h2>
-        <div class="grid-destaque">
-            <div class="card-destaque">
-                <div class="selo-condecoracao">★</div>
-                <img class="foto-destaque" src="img/membro-destaque-01.png" alt="Nome do Membro">
-                <h3 class="nome-destaque">Nome do Membro</h3>
-                <p class="titulo-honraria">Soldado do Mês</p>
-                <p class="desc-destaque">Descrição do feito ou motivo da condecoração.</p>
-                <div class="tags-condecoracao">
-                    <span class="tag-medalha">Disciplina</span>
-                    <span class="tag-medalha">Liderança</span>
-                </div>
+        <div class="grid-regras">
+            <div class="box-regra">
+                <h3><i class="fa-solid fa-gavel"></i> REGRAS INTERNAS DA ORG</h3>
+                <ul>
+                    <li>Respeitar estritamente a Hierarquia do Alto Comando.</li>
+                    <li>Proibido o uso de armas de guerra fora de serviço ou sem autorização.</li>
+                    <li>Obrigatório o uso de rádio comunicador e reporte de QTH regular.</li>
+                    <li>Permanência mínima de 3 dias no Exército sob pena de Blacklist.</li>
+                </ul>
+            </div>
+            <div class="box-regra">
+                <h3><i class="fa-solid fa-scale-balanced"></i> DIRETRIZES DO SERVIDOR (BPS)</h3>
+                <ul>
+                    <li>Proibido estritamente Deathmatch (DM) e Drive-By (DB).</li>
+                    <li>Proibido a prática de Anti-RP sob qualquer circunstância.</li>
+                    <li>Respeito total às abordagens e simulação de medo da vida (Amor à Vida).</li>
+                    <li>Uso correto do canal de comunicação oficial do servidor.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="secao clipped-corner" id="alistamento">
-        <div class="container-alistamento">
-            <h2 class="titulo-secao" style="border: none; color: var(--brilho-shox);">CONVOCAÇÃO_ABERTA</h2>
-            <p style="margin-bottom: 30px; color: var(--texto-principal);">Responda o questionário oficial abaixo com atenção. Ao finalizar, o sistema abrirá seu WhatsApp com o relatório pronto para envio.</p>
+    <!-- FORMULÁRIO DE ALISTAMENTO -->
+    <section class="secao" id="alistamento">
+        <h2 class="titulo-secao"><i class="fa-solid fa-pen-to-square"></i> FORMULÁRIO DE ALISTAMENTO TÁTICO</h2>
+        
+        <div class="form-container">
+            <p style="margin-bottom: 2rem; text-align: center; color: var(--texto-sub);">
+                Responda o questionário abaixo com máxima clareza. O relatório será formatado automaticamente e transmitido para o WhatsApp da Liderança para análise.
+            </p>
 
-            <form class="form-cyber" id="formAlistamento">
-                <div class="form-group">
-                    <label for="p1">> 1: NICK INGAME:</label>
-                    <input type="text" id="p1" placeholder="Ex: Call_Famo$" required class="input-cyber">
-                </div>
-                <div class="form-group">
-                    <label for="p2">> 2: NÍVEL:</label>
-                    <input type="number" id="p2" placeholder="Ex: 15" required class="input-cyber">
+            <form id="formAlistamento">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="p1">1. NICK INGAME:</label>
+                        <input type="text" id="p1" class="input-militar" placeholder="Ex: Call_Famo$" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="p2">2. NÍVEL INGAME:</label>
+                        <input type="number" id="p2" class="input-militar" placeholder="Ex: 15" min="1" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p3">3. CONCEITO: O QUE É DM (DEATHMATCH)?</label>
+                        <textarea id="p3" rows="2" class="input-militar" placeholder="Defina com suas palavras..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p4">4. CONCEITO: O QUE É DB (DRIVE-BY)?</label>
+                        <textarea id="p4" rows="2" class="input-militar" placeholder="Defina com suas palavras..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p5">5. CONCEITO: O QUE É ANTI-RP?</label>
+                        <textarea id="p5" rows="2" class="input-militar" placeholder="Defina com suas palavras..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p6">6. CITE 1 EXEMPLO PRÁTICO DE CADA (DM, DB E ANTI-RP):</label>
+                        <textarea id="p6" rows="3" class="input-militar" placeholder="Exemplo DM: ... | Exemplo DB: ... | Exemplo Anti-RP: ..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p7">7. PARA VOCÊ, O QUE É REALIZAR UM BOM ROLEPLAY (RP)?</label>
+                        <textarea id="p7" rows="2" class="input-militar" placeholder="Sua visão sobre interpretação tática..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="p8">8. VOCÊ CONSTA EM BLACKLIST?</label>
+                        <select id="p8" class="input-militar" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Não">Não</option>
+                            <option value="Sim">Sim</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="p9">9. CIENTE DO PERÍODO MÍNIMO (3 DIAS) SOB PENA DE BLACKLIST?</label>
+                        <select id="p9" class="input-militar" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Sim, estou totalmente de acordo.">Sim, estou totalmente de acordo.</option>
+                            <option value="Não concordo.">Não concordo.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p10">10. COMPREENDE QUE PROMOÇÕES DEPENDEM DE MERECIMENTO E CRONOGRAMA?</label>
+                        <select id="p10" class="input-militar" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Sim, compreendo e respeito a hierarquia.">Sim, compreendo e respeito a hierarquia.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p11">11. DIGA 5 COMANDOS OFICIAIS DA ORG:</label>
+                        <textarea id="p11" rows="2" class="input-militar" placeholder="Ex: /r, /su, /m, /algemar, /governo..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p12">12. CITE 3 MOTIVOS VÁLIDOS PARA APLICAÇÃO DE /SU:</label>
+                        <textarea id="p12" rows="2" class="input-militar" placeholder="Ex: TH (Tentativa de Homicídio), RMP (Recusa de Parada)..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p13">13. CITE 3 REGRAS GERAIS DO SERVIDOR BPS:</label>
+                        <textarea id="p13" rows="2" class="input-militar" placeholder="Regra 1, Regra 2, Regra 3..." required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="p14">14. CITE 3 REGRAS INTERNAS DO EXÉRCITO BRASILEIRO:</label>
+                        <textarea id="p14" rows="2" class="input-militar" placeholder="Regra 1, Regra 2, Regra 3..." required></textarea>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="p3">> 3: CITE O QUE É DM?:</label>
-                    <textarea id="p3" rows="2" placeholder="Explique com suas palavras..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p4">> 4: CITE O QUE É DB?:</label>
-                    <textarea id="p4" rows="2" placeholder="Explique com suas palavras..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p5">> 5: CITE O QUE É ANTI-RP?:</label>
-                    <textarea id="p5" rows="2" placeholder="Explique com suas palavras..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p6">> 6: CITE 1 ATO DE CADA (DM, DB E ANTI-RP):</label>
-                    <textarea id="p6" rows="3" placeholder="Exemplo de DM: ... | Exemplo de DB: ... | Exemplo de Anti-RP: ..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p7">> 7: O QUE É SER RP?:</label>
-                    <textarea id="p7" rows="2" placeholder="Diga o que compreende sobre o conceito..." required class="input-cyber"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="p8">> 8: VOCÊ ESTÁ DE BLACKLIST?</label>
-                    <select id="p8" required class="input-cyber" style="background-color: rgba(3, 5, 3, 0.9); color: var(--texto-principal);">
-                        <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="Não">Não</option>
-                        <option value="Sim">Sim</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="p9">> 9: VOCÊ TÁ CIENTE DE SE SAIR ANTES DOS 3 DIAS IRÁ DE BLACKLIST?</label>
-                    <select id="p9" required class="input-cyber" style="background-color: rgba(3, 5, 3, 0.9); color: var(--texto-principal);">
-                        <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="Sim, estou ciente.">Sim, estou ciente.</option>
-                        <option value="Não concordo.">Não concordo.</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="p10">> 10: SE AJUDAR NOIS NO CRONOGRAMA SERÁ DADO O CARGO SE REALMENTE TIVER MERECENDO, CERTO?</label>
-                    <select id="p10" required class="input-cyber" style="background-color: rgba(3, 5, 3, 0.9); color: var(--texto-principal);">
-                        <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="Certo, compreendido perfeitamente.">Certo, compreendido perfeitamente.</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="p11">> 11: DIGA 5 COMANDOS DA ORG:</label>
-                    <textarea id="p11" rows="2" placeholder="Cite cinco comandos do Exército..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p12">> 12: DIGA 3 TIPOS DE /SU:</label>
-                    <textarea id="p12" rows="2" placeholder="Cite três motivos de /su criminosos..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p13">> 13: CITE 3 REGRAS DO SERVIDOR:</label>
-                    <textarea id="p13" rows="2" placeholder="Cite três regras gerais do Brasil Play Shox..." required class="input-cyber"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="p14">> 14: CITE 3 REGRAS DA ORG:</label>
-                    <textarea id="p14" rows="2" placeholder="Cite três regras internas do Exército..." required class="input-cyber"></textarea>
-                </div>
-
-                <button type="submit" class="btn-tech" style="width: 100%; margin-top: 20px;">
-                    <i class="fa-brands fa-whatsapp"></i> ENVIAR_SISTEMA_COMPLETO
+                <button type="submit" class="btn-militar" style="width: 100%; justify-content: center; margin-top: 2rem;">
+                    <i class="fa-brands fa-whatsapp"></i> TRANSMITIR ALISTAMENTO (WHATSAPP)
                 </button>
             </form>
-
-            <div style="margin-top: 25px; color: var(--brilho-shox); font-weight: bold; letter-spacing: 2px;">
-                TENHA UMA BOA SORTE!
-            </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>[SISTEMA] :: EB_BPS Divisão Cyber // © 2026</p>
-        <p style="font-size: 0.7rem; opacity: 0.5; margin-top: 5px;">Acesso restrito. Sua atividade e IP estão sendo monitorados pela rede de inteligência militar do BPS.</p>
+        <p><strong>EXÉRCITO BRASILEIRO</strong> - Servidor Brasil Play Shox (BPS) © 2026</p>
+        <p style="margin-top: 5px;">Portal Tático & Sistema Automatizado de Recrutamento Operacional.</p>
     </footer>
 
+    <!-- JAVASCRIPT AVANÇADO + MENU MOBI -->
     <script>
-        document.getElementById('formAlistamento').addEventListener('submit', function(event) {
-            event.preventDefault();
+        // LÓGICA DO MENU HAMBÚRGUER (MOBILE)
+        const btnMobile = document.getElementById('btn-mobile');
+        const navMenu = document.getElementById('nav-menu');
 
-            const p1 = document.getElementById('p1').value;
-            const p2 = document.getElementById('p2').value;
-            const p3 = document.getElementById('p3').value;
-            const p4 = document.getElementById('p4').value;
-            const p5 = document.getElementById('p5').value;
-            const p6 = document.getElementById('p6').value;
-            const p7 = document.getElementById('p7').value;
+        function toggleMenu() {
+            btnMobile.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+
+        // Fecha o menu ao clicar em qualquer link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                btnMobile.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Efeito Header ao Rolar a Página
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '0.3rem 0';
+                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.8)';
+            } else {
+                header.style.padding = '0.8rem 0';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Formatação e Envio via WhatsApp
+        document.getElementById('formAlistamento').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const p1 = document.getElementById('p1').value.trim();
+            const p2 = document.getElementById('p2').value.trim();
+            const p3 = document.getElementById('p3').value.trim();
+            const p4 = document.getElementById('p4').value.trim();
+            const p5 = document.getElementById('p5').value.trim();
+            const p6 = document.getElementById('p6').value.trim();
+            const p7 = document.getElementById('p7').value.trim();
             const p8 = document.getElementById('p8').value;
             const p9 = document.getElementById('p9').value;
             const p10 = document.getElementById('p10').value;
-            const p11 = document.getElementById('p11').value;
-            const p12 = document.getElementById('p12').value;
-            const p13 = document.getElementById('p13').value;
-            const p14 = document.getElementById('p14').value;
+            const p11 = document.getElementById('p11').value.trim();
+            const p12 = document.getElementById('p12').value.trim();
+            const p13 = document.getElementById('p13').value.trim();
+            const p14 = document.getElementById('p14').value.trim();
 
-            let mensagem = `*⚡ SOLICITAÇÃO DE ALISTAMENTO - EB BPS ⚡*\n\n`;
-            mensagem += `*1: NICK INGAME:*\n${p1}\n\n`;
-            mensagem += `*2: NIVEL:*\n${p2}\n\n`;
-            mensagem += `*3: CITE OQ E DM?:*\n${p3}\n\n`;
-            mensagem += `*4: CITE OQ E DB?:*\n${p4}\n\n`;
-            mensagem += `*5: CITE OQ E ANT RPG?:*\n${p5}\n\n`;
-            mensagem += `*6: CITE 1 ATO DE CADA DM DB E ANT RPG:*\n${p6}\n\n`;
-            mensagem += `*7: OQ E SER RPG?:*\n${p7}\n\n`;
-            mensagem += `*8: VOCE ESTA DE BLACKLIST?*\n${p8}\n\n`;
-            mensagem += `*9: VC TA CIENTE DE SE SAIR ANTES DOS 3 DIAS IRAR DE BLACKLIST?*\n${p9}\n\n`;
-            mensagem += `*10: SE AJUDA NOIS NO CRONOGRAMA SERA DADO O CARGO SE REALMENTE TIVER MERECENDO CERTO:?*\n${p10}\n\n`;
-            mensagem += `*11: DIGA 5 COMANDO DA ORG:*\n${p11}\n\n`;
-            mensagem += `*12: DIGA 3 TIPO DE /SU:*\n${p12}\n\n`;
-            mensagem += `*13: CITE 3 REGRAS DO SERVIDOR:*\n${p13}\n\n`;
-            mensagem += `*14: CITE 3 REGRAS DA ORG:*\n${p14}\n\n`;
-            mensagem += `*TENHA UMA BOA SORTE!*`;
+            let text = `*🔰 RELATÓRIO DE ALISTAMENTO - EXÉRCITO BPS 🔰*\n\n`;
+            text += `*1. NICK INGAME:* ${p1}\n`;
+            text += `*2. NÍVEL:* ${p2}\n\n`;
+            text += `*3. CONCEITO DM:* ${p3}\n`;
+            text += `*4. CONCEITO DB:* ${p4}\n`;
+            text += `*5. CONCEITO ANTI-RP:* ${p5}\n\n`;
+            text += `*6. EXEMPLOS PRÁTICOS:* ${p6}\n\n`;
+            text += `*7. O QUE É SER RP:* ${p7}\n\n`;
+            text += `*8. BLACKLIST:* ${p8}\n`;
+            text += `*9. CIENTE DOS 3 DIAS:* ${p9}\n`;
+            text += `*10. CIENTE DO CRONOGRAMA:* ${p10}\n\n`;
+            text += `*11. 5 COMANDOS DA ORG:* ${p11}\n`;
+            text += `*12. 3 MOTIVOS DE /SU:* ${p12}\n`;
+            text += `*13. 3 REGRAS DO SERVIDOR:* ${p13}\n`;
+            text += `*14. 3 REGRAS DA ORG:* ${p14}\n\n`;
+            text += `*AGUARDANDO AVALIAÇÃO DO ALTO COMANDO!*`;
 
-            const destinoCelular = "5521991604197";
-            const apiLink = `https://api.whatsapp.com/send?phone=${destinoCelular}&text=${encodeURIComponent(mensagem)}`;
-
-            window.open(apiLink, '_blank');
+            const telefone = "5521991604197";
+            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(text)}`;
+            
+            window.open(url, '_blank');
         });
     </script>
-
 </body>
 </html>
